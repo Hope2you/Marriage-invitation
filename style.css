@@ -1,0 +1,235 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-image: url('/images/BACKGROUND.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  
+  header {
+    background-color: #4a5b6b;
+    padding: 20px;
+    color: #fff;
+    text-align: center;
+    animation: fade-in 1s ease-in-out;
+  }
+  
+  @keyframes fade-in {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  
+  main {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #bde3e9;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    animation: slide-up 1s ease-in-out;
+  }
+  
+  @keyframes slide-up {
+    0% {
+      transform: translateY(20px);
+      opacity: 0;
+    }
+    100% {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
+  section.event-details {
+    text-align: center;
+    background-color: #fff;
+    padding: 20px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  section:nth-of-type(2) h2 {
+    text-align: center;
+    color: #4a5b6b;
+    margin-bottom: 10px;
+  }
+  
+  section:nth-of-type(3) h2 {
+    text-align: center;
+    color: #4a5b6b;
+    margin-bottom: 10px;
+  }
+ 
+  section.event-details {
+    text-align: center;
+  }
+  
+  section.event-details h2 {
+    display: inline-block;
+    color: #4a5b6b;
+    margin: 0 auto 10px;
+  }
+  section.event-details .welcome-message {
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  
+  section.event-details .welcome-message p {
+    font-size: 18px;
+    color: #4a5b6b;
+  }
+
+  section.event-details p {
+    color: #4a5b6b;
+    margin-bottom: 5px;
+  }
+  
+  section.event-details p:first-child {
+    font-weight: bold;
+  }
+   
+  
+  h1, h2 {
+    color: #1eb899;
+  }
+  
+  form {
+    text-align: center;
+  }
+  
+  form div {
+    margin: 10px 0;
+  }
+
+  form label {
+    display: block;
+    margin-bottom: 5px;
+  }
+  
+  form input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    transition: border-color 0.3s ease-in-out;
+  }
+  
+  form input:focus {
+    border-color: #4a5b6b;
+  }
+  
+  form button {
+  display: block;
+  margin: 20px auto;
+  background-color: #4a5b6b;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out;
+}
+  
+  form button:hover {
+    background-color: #6385a6;
+    box-shadow: 0 0 10px #6385a6;
+    animation: glowing 1s ease-in-out infinite;
+  }
+  
+  footer {
+    background-color: #4a5b6b;
+    padding: 20px;
+    color: #fff;
+    text-align: center;
+    animation: fade-in 1s ease-in-out;
+  }
+  
+  .image-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    animation: fade-in 1s ease-in-out;
+  }
+  
+  .image-container img {
+    max-width: 100%;
+    margin: 10px 0;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .image-container img:hover {
+    transform: scale(1.1);
+  }
+  
+  .option-container {
+    display: inline-block;
+    margin-right: 10px;
+  }
+  
+  .option-container input[type="radio"] {
+    display: none;
+  }
+  
+  .option-container label {
+    display: inline-block;
+    padding: 15px 30px;
+    background-color: #4a5b6b;
+    color: #fff;
+    cursor: pointer;
+    font-size: 20px;
+    border: none;
+    transition: background-color 0.3s ease-in-out, transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+  }
+  
+  .option-container input[type="radio"]:checked + label {
+    background-color: #6385a6;
+    transform: scale(1.1);
+    box-shadow: 0 0 10px #6385a6;
+    animation: glowing 1s ease-in-out infinite;
+  }
+  
+  .submit-container button {
+    display: block;
+    margin: 20px auto;
+    background-color: #4a5b6b;
+    color: #fff;
+    padding: 15px 30px;
+    border: none;
+    cursor: pointer;
+    font-size: 22px;
+    transition: background-color 0.3s ease-in-out;
+  }
+  
+  @keyframes glowing {
+    0% {
+      box-shadow: 0 0 10px #6385a6;
+    }
+    50% {
+      box-shadow: 0 0 20px #6385a6, 0 0 40px #6385a6;
+    }
+    100% {
+      box-shadow: 0 0 10px #6385a6;
+    }
+  }
+  #response-message {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 999;
+    background-color: rgba(7, 7, 7, 0.8);
+    padding: 20px;
+    border-radius: 5px;
+    font-size: 60px; /* Adjust the font size as needed */
+    text-align: center;
+    color: #2eff55; /* Adjust the color as desired */
+    font-weight: bold; /* Add font weight if desired */
+  }
+  
+  
+  
+  
+  

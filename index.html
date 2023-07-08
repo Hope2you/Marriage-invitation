@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Marriage Invitation</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>Marriage Invitation</h1>
+    <p>“Love is patient, love is kind. It does not envy, it does not boast, it is not proud. It does not dishonor others, 
+      it is not self-seeking, it is not easily angered, it keeps no record of wrongs. Love does not delight in evil but 
+      rejoices with the truth. It always protects, always trusts, always hopes, always perseveres. Love never fails...”</p>
+  </header>
+  
+  <main>
+    <section class="event-details">
+      <div class="welcome-message">
+        <p>“We would be honored if you could 
+          share our special day with us and bless us with your presence.”</p>
+      </div>
+      <h2>Event Details</h2>
+      <p>Date: [Event Date]</p>
+      <p>Time: [Event Time]</p>
+      <p>Location: <a href="https://maps.google.com/?q=[Event Location]">[Event Location]</a></p>
+    </section>
+
+    <div id="response-message"></div>
+    
+    <section>
+      <h2>THOMAS AND </h2>
+      <div class="image-container">
+        <img src="/images/1.jpg" alt="Image 1">
+        <img src="/images/2.jpg" alt="Image 2">
+        <img src="/images/3.jpg" alt="Image 3">
+      </div>
+    </section>
+    
+    <section>
+      <h2 class="rsvp-section"> WILL YOU ATTEN THE MARRIAGE </h2>
+      <form id="rsvpForm">
+        <div class="option-container">
+          <input type="radio" name="response" id="yesOption" value="yes" required>
+          <label for="yesOption">Yes</label>
+        </div>
+        <div class="option-container">
+          <input type="radio" name="response" id="noOption" value="no" required>
+          <label for="noOption">No</label>
+        </div>
+        <div class="submit-container">
+          <button type="submit">Submit</button>
+        </div>
+      </form>
+    </section>
+  </main>
+  
+  <footer>
+    <p>©Gameavan:get websites for Rs 99/- only  </p>
+  </footer>
+  
+  <script src="script.js"></script>
+</body>
+</html>
